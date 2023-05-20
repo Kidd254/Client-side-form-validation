@@ -6,14 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Side Form Validation</title>
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="" method="post">
+    <form action="https://formspree.io/f/xayzkrdv" method="post" class="user-input" id="input-field">
+        <label for="name"> Enter Your Name
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+        </label>
+        <label for="email"> Enter Your Email
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+        </label>
+        <span class="error" aria-live="polite"></span>
+        <textarea name="message" id="text" cols="30" rows="10" placeholder="Write your message" required></textarea>
+
+
+        <input type="submit" id="submit" value="submit">
+
 
     </form>
 </body>
-<script href="script.js"></script>
+<script src="script.js"></script>
 
 </html>

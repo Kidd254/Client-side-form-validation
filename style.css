@@ -1,0 +1,51 @@
+.user-input {
+    display: flex;
+flex-direction: column;
+}
+
+#name {
+    order: 0;
+    margin: 2%;
+}
+
+#email {
+    order: 1;
+    margin: 2%;
+  font-family: inherit;
+  font-size: 90%;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+
+#email:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+#email:focus:invalid {
+  outline:#fdd;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: red;
+  background-color: rgb(235, 20, 20);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+#text {
+    order: 2;
+    margin: 2%;
+}
+
+#submit {
+    order: 3;
+    margin: 2%;
+    width: 5%;
+}
